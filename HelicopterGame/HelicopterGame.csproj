@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE484F4E-B917-481F-A0E5-F2529F34494A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HelicopterGame</RootNamespace>
+    <AssemblyName>HelicopterGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helicopter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmokeParticle.cs" />
+    <Compile Include="WallBlock.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixel-art-blue-rectangular-button-app-game-interface-vector-icon-8bit-game_360488-769-removebg-preview - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixel-art-blue-rectangular-button-app-game-interface-vector-icon-8bit-game_360488-769-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groundroof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helicopter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hurdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAME-OVER-5-18-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAME-OVERcrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAME-OVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yrsV+f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b0dae045525730b9c9e67c2d355a54b7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b0dae045525730b9c9e67c2d355a54b7-ezgif.com-crop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helicopter-game-5-18-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helicoppy-5-18-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click-to-start-press-space-or-5-18-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click-to-start-press-space-or-5-18-2024 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundtrack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundtrack.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pickupCoin.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\failure.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jump.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click-to-start-press-space-or-5-19-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-click-to-start-press-sp-5-19-2024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\press-Enter-to-restart-5-30-2024.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
